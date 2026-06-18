@@ -19,6 +19,7 @@ import { ResponseInterceptor } from './common/interceptors/response.interceptor'
 import { LoggerModule } from './logger/logger.module';
 import { Transaction } from './transactions/entities/transaction.entity';
 import { WalletSession } from './wallet/entities/wallet-session.entity';
+import { RecommendationV2Module } from './api/routes/v2/recommendation.module';
 
 @Module({
   imports: [
@@ -51,6 +52,7 @@ import { WalletSession } from './wallet/entities/wallet-session.entity';
     WalletModule,
     SorobanContractModule,
     StellarTimeoutModule,
+    RecommendationV2Module,
     ThrottlerModule.forRoot([
       {
         ttl: 60000,
