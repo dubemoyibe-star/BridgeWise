@@ -22,6 +22,7 @@ import { Transaction } from './transactions/entities/transaction.entity';
 import { WalletSession } from './wallet/entities/wallet-session.entity';
 import { RecommendationV2Module } from './api/routes/v2/recommendation.module';
 import { IntelligenceHubModule } from './intelligence-hub/stellar/intelligence-hub.module';
+import { AssetDiscoveryModule } from './api/assets/discovery/stellar/asset-discovery.module';
 
 @Module({
   imports: [
@@ -56,6 +57,7 @@ import { IntelligenceHubModule } from './intelligence-hub/stellar/intelligence-h
     StellarTimeoutModule,
     RecommendationV2Module,
     IntelligenceHubModule,
+    AssetDiscoveryModule,
     ThrottlerModule.forRoot([
       {
         ttl: 60000,
