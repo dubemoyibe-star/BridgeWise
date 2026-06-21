@@ -6,6 +6,7 @@ import { ConfigModule } from './config/config.module';
 import { ConfigService } from './config/config.service';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { StellarReputationModule } from './reputation/providers/stellar/stellar-reputation.module';
 import { TransactionsModule } from './transactions/transactions.module';
 import { BenchmarkModule } from './benchmark/benchmark.module';
 import { AnalyticsModule } from './analytics/analytics.module';
@@ -52,6 +53,7 @@ import { AssetDiscoveryModule } from './api/assets/discovery/stellar/asset-disco
     AnalyticsModule,
     TokenMetadataModule,
     VersionModule,
+       StellarReputationModule,
     WalletModule,
     SorobanContractModule,
     StellarTimeoutModule,
