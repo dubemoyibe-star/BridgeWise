@@ -25,6 +25,7 @@ import { RecommendationV2Module } from './api/routes/v2/recommendation.module';
 import { IntelligenceHubModule } from './intelligence-hub/stellar/intelligence-hub.module';
 import { AssetDiscoveryModule } from './api/assets/discovery/stellar/asset-discovery.module';
 import { RecommendationMetricsModule } from './metrics/recommendations/recommendation-metrics.module';
+import { StellarEcosystemMetricsModule } from './metrics/ecosystem/stellar/stellar-ecosystem-metrics.module';
 
 @Module({
   imports: [
@@ -62,6 +63,7 @@ import { RecommendationMetricsModule } from './metrics/recommendations/recommend
     IntelligenceHubModule,
     AssetDiscoveryModule,
     RecommendationMetricsModule,
+    StellarEcosystemMetricsModule,
     ThrottlerModule.forRoot([
       {
         ttl: 60000,
